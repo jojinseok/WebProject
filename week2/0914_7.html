@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>음악 감상 페이지</title>
+        <style>
+            #musician{
+                display: block;
+                width: 90%;
+                margin: 15px;
+                padding: 15px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            musician img{
+                float: left;
+                margin: 5px 15px;
+            }
+            h1{
+                width:90%;
+                margin: 5px 15px;
+                padding: 10px;
+                border:1px solid black;
+                border-radius: 10px;
+                background-color: #222;
+                color: white;
+            }
+            p{
+                font-size: 15px;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>바흐(Johann Sebastian Bach, 1685~1750)</h1>
+        <div id="musician">
+            <img src="bach.png" alt="바흐 사진" title="바흐">
+            <p>서양 음악의 아버지라고 일컫는 바흐는 바로크 시대의 최후</p>
+            <p>바로크 음악에 있어서 바호는 대위법 기술의 정수</p>
+            <h2>Sinfonia</h2>
+            <audio controls>
+                <source src="bach.mp3">
+                <source src="bach.ogg">
+            </audio>
+        </div>
+
+            <h1>헨델(Georg Friedrich Handel, 1685~1759)</h1>
+            <div id="musician">
+                <img src="handel.png" alt="헨델 사진" title="헨델">
+                <p>바로크 시대의 작곡가로 음악의 어머니라고 불린다</p>
+                <p>그의 음악은 명쾌하고 호탕하고 신선하며 생생한 리듬을 가진다</p>
+                <p>헨델은 그의 극적 작품에서 명성을 얻었다</p>
+                <h2>Suite no.1 in A major (1st set)</h2>
+                <audio controls>
+                    <source src="handel.m4a">
+                    <source src="handel.ogg">
+                </audio>
+            </div>
+
+    </body>
+</html>
