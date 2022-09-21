@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<form>
+    <lable for="mysearch">상품검색</lable>
+    <input type="search" id="mysearch" size="20"><br>
+    <lable for="order">주문일</lable>
+    <input type="datetime-local"><br>
+    <label for="selec">직업</label>
+    <select>
+        <option selected>가까운 분야 선택</option>
+        <option value="student">학생</option>
+        <option value="webdev">웹개발</option>
+        <option value="webdes">웹디자인</option>
+        <option value="tutor">교육관련</option>
+        <option value="etc">기타</option>
+    </select><br>
+    <label for="memo">남길 말씀</label>
+    <textarea id="memo" cols="60" rows="15">
+</textarea>
+<fieldset>
+    <legend><b>개인정보</b></legend>
+        <li>
+            <label for="username">이름</label>
+            <input type="text" id="username" autofocus placeholder="공백없이 입력하세요" required>
+        </li>
+        <li>
+            <label for="mail">메일주소</label>
+            <input type="email" id="mail" autocomplete="off" placeholder="abcd@abcd.com" required>
+          
+        </li>
+    </ul>
+</fieldset>
+
+</form>
