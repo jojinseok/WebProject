@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>성별 판별</title>
+</head>
+<body>  
+<img src="who.PNG" id="sex_img">
+<script>
+    var sex=prompt("당신의 성별을 입력하시오. (남:0 여:1)");
+    var resultArea=document.getElementById("sex_img");
+    
+    if(sex=="0"){
+        resultArea.src="male.PNG";
+    }else if(sex=="1"){
+resultArea.src="female.PNG";
+    }else{
+        alert("성별을 잘못 입력하셨습니다");
+    }
+</script>
+</body>
+</html> 
