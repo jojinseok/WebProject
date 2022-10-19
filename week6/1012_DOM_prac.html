@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <form>
+            <input type="button" value="하늘색" onclick="change('blue','black')">
+        </form>
+        <br>
+        <form>
+            <input type="button" value="보라색" onclick="change('blueviolet','black')">
+        </form>
+        <br>
+        <form>
+            <input type="button" value="검은색" onclick="change('black','black')">
+        </form>
+        <br>
+        
+<script>
+    function change(bgcolor, txtcolor){
+        document.bgColor=bgcolor;
+        document.fgColor=txtcolor;
+    }
+</script>
+
+
+<img src="bee.PNG" id="bee" onmouseover="zoomIn()" onmouseout="zoomOut()">
+<script>
+    function zoomIn(){
+        document.getElementById('bee').width="500";
+        document.getElementById('bee').height="330";
+    }
+    function zoomOut(){
+        document.getElementById('bee').width="200";
+        document.getElementById('bee').height="130";
+    }
+</script>
+    </body>
+</html>

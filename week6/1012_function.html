@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function changeTo(myImg){
+            var myNum=document.getElementById("num");
+            myNum.src=myImg;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="4로 바꾸기" onclick="changeTo('4.PNG')">
+        <input type="button" value="2로 바꾸기" onclick="changeTo('2.PNG')">
+        
+    </form>
+    <div>
+        <img src="2.PNG" id="num">
+    </div>
+</body>
