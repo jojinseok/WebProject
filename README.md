@@ -2,7 +2,9 @@
 
 
 게시판 만들기 프로젝트 (branch : master, back-end) : (MustHaveJSP)
+
 백 엔드 (branch : back-end) : JSP, MySQL, JDBC, 서블릿, MVC (MustHaveJSP)
+
 프론트 엔드 (branch : front-end) : HTML5, CSS 공부 (week1, week2, week3, week4, week5, week6, week8)
 
 활용/참고 정보 :
