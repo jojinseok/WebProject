@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HTML5+CSS3 세미나 접수</title>
+<style type="text/css">
+    #info {
+        width: auto;
+        height: 200px;
+        border: 1px solid black;
+        padding: 6px;
+        background: #ededed;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul#personal li>label,
+    ul#opt li>label {
+        width: 80px;
+        float: left;
+    }
+
+    fieldset {
+        margin-bottom: 15px;
+    }
+
+    ul#sel1 li,
+    ul#sel2 li {
+        display: inline;
+        float: left;
+    }
+
+    #buttons {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="info">
+            <h3>세미나 정보</h3>
+            <ol>
+                <li>주제 : 차세대 웹 표준 기술 HTML</li>
+                <li>일정 : 5월 12일 14:00 ~ 17:00</li>
+                <li>장소 : 공학관 2층 세미나실</li>
+                <li>인원 : 선착수 100명</li>
+                <li>비용 : 본교 학생 무료 (외부 참가자 5,000원)</li>
+                <li>참가신청 : 아래 양식에 빠짐없이 기입하여 접수해 주세요</li>
+            </ol>
+        </div>
+        <form id="register" action="register.php">
+
+            <h3>개인 정보</h3>
+            <ul id="personal">
+                <li>
+                    <label for="username">이름</label>
+                    <input type="text" name="username" id="username" size="20" maxlength="20">
+                </li>
+                <li>
+                    <label for="pwd">비밀번호</label>
+                    <input type="password" name="pwd" id="pwd" size="20" maxlength="20">
+                    (수정시 필요)
+                </li>
+                </li>
+            </ul>
+            <h3>참가 정보</h3>
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend><b>참가 유형 선택</b></legend>
+                        <ul id="sell">
+                            <li>
+                                <input type="radio" id="free" name="pay" value="free">
+                                <label for="free">무료(교내참가자)</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="paid" name="pay" value="paid">
+                                <label for="paid">유료(교외참가자)</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend><b>관심 분야 선택</b></legend>
+                        <ul id="sel2">
+                            <li>
+                                <input type="checkbox" id="html5" value="semantic">
+                                <lable for="html5">HTML5 시맨틱</lable>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="css3" value="css3">
+                                <lable for="css3">CSS3</lable>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="str" value="webstorage">
+                                <lable for="str">Web Storage</lable>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sock" value="websocket">
+                                <lable for="sock">Web Socket</lable>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cnv" value="canvas">
+                                <lable for="cnv">Canvas</lable>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="geo" value="geolocation">
+                                <lable for="geo">Geolocation</lable>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+            </ul>
+            <h3>선택 사항</h3>
+            <ul id="opt">
+                <li>
+                    <label for="job">직업</label>
+                    <select>
+                        <option selected>가까운 분야 선택</option>
+                        <option value="student">학생</option>
+                        <option value="webdev">웹개발</option>
+                        <option value="webdes">웹디자인</option>
+                        <option value="tutor">교육관련</option>
+                        <option value="etc">기타</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="memo">남길 말씀</label>
+                    <textarea id="memo" cols="60" rows="15">
+    </textarea>
+
+                </li>
+            </ul>
+            <hr>
+            <div id="buttons">  
+                <label><input type="submit" value="접수하기"></label>
+                <lable><input type="reset" value="다시쓰기"></lable>
+            </div>
+        </form>
+    </div>
+
+</body>

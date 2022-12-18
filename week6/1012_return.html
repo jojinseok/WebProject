@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+    function calcSum(num){
+
+        var sum=0;
+        for(i=1;i<=num;i++){
+            sum+=i;
+        }
+        return sum;
+    }
+    function displaySum(num){
+        returnValue=calcSum(num);
+        alert(num+"까지 더한 값은 "+returnValue+"입니다.")
+    }
+    num1=prompt("숫자를 입력해주세요");
+    num=parseInt(num1);     
+    displaySum(num);
+</script>
+</head>
+<body>
+    
+</body>
+</html>
+

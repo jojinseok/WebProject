@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- form label -->
+<form>
+    <form>
+        <p><label for="username"><b>이름 : </b></label>
+            <input type="text" id="username">
+        </p>
+        <p><label for="userid"><b>아이디 : </b></label>
+            <input type="text" id="userid">
+        </p>
+    </form>
+
+    <form>
+        <p><label>이름 : <input type="text"></label></p>
+        <p><label>아이디 : <input type="text"></label></p>
+    </form>
+
+    <form>
+        <p>이름 : <input type="text"></p>
+        <p>아이디 : <input type="text"></p>
+    </form>
+
+    <!-- fieldset -->
+    <fieldset>
+        <legend><b>개인정보</b></legend>
+
+        <ul id="personal">
+            <li>
+                <label for="username2">이름</label>
+                <input type="text" name="username2" id="username2" size="20" maxlength="20">
+            </li>
+            <li>
+                <label for="pwd2">비밀번호</label>
+                <input type="text" name="pwd2" id="pwd2" size="20" maxlength="20">
+                (수정시 필요)
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>로그인 정보</b></legend>
+        <p><label for="userid2"><b>아이디 : </b></label>
+            <input type="text" id="userid2">
+        </p>
+        <p><label for="userpwd"><b>비밀번호 : </b></label>
+            <input type="text" id="userpwd">
+        </p>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend><b>참가 유형 선택</b></legend>
+        <ul id="sell">
+            <li>
+                <input type="radio" id="free" name="pay" value="free">
+                <label for="free">무료(교내참가자)</label>
+            </li>
+            <li>
+                <input type="radio" id="paid" name="pay" value="paid">
+                <label for="paid">유료(교외참가자)</label>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>관심 분야 선택</b></legend>
+        <ul id="sel2">
+            <li>
+                <input type="checkbox" id="html5" value="semantic">
+                <lable for="html5">HTML5 시맨틱</lable>
+            </li>
+            <li>
+                <input type="checkbox" id="css3" value="css3">
+                <lable for="css3">CSS3</lable>
+            </li>
+            <li>
+                <input type="checkbox" id="str" value="webstorage">
+                <lable for="str">Web Storage</lable>
+            </li>
+            <li>
+                <input type="checkbox" id="sock" value="websocket">
+                <lable for="sock">Web Socket</lable>
+            </li>
+            <li>
+                <input type="checkbox" id="cnv" value="canvas">
+                <lable for="cnv">Canvas</lable>
+            </li>
+            <li>
+                <input type="checkbox" id="geo" value="geolocation">
+                <lable for="geo">Geolocation</lable>
+            </li>
+        </ul>
+    </fieldset>
+
+    <tr>
+        <label for="photo">
+            <th>프로필사진</th>
+        </label>
+        <td><input type="file" name="photo" id="photo"></td>
+    </tr>
+
+    <h3>&lt;input&gt; 태그로 만드는 버튼</h3>
+    <input type="submit" value="전송하기"> 이 버튼을 클릭하면 폼을 전송합니다<br>
+    <input type="reset" value="다시쓰기"> 이 버튼을 클릭하면 폼의 내용이 지워집니다<br>
+    <input type="button" value="그냥 버튼"> 이 버튼에는 자바스크립트 함수를 연결해야합니다<br>
+    <input type="image" src="bttn.PNG"> 이 버튼을 클릭하면 폼을 전송합니다<br>
+    <lable for="mail">메일 주소</lable>
+    <input type="email" id="email" size="20"><br>
+    <lable for="homep">홈페이지(URL)</lable>
+    <input type="url" id="homep" size="50">
+</form>
