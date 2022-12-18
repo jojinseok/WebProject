@@ -1,7 +1,7 @@
 웹프로젝트 
 
 
-게시판 만들기 프로젝트 (branch : master, back-end) : (MustHaveJSP)
+게시판 만들기 프로젝트 (branch : master, back-end) : (MustHaveJSP -> web-app -> 14MVCBoard)
 
 백 엔드 (branch : back-end) : JSP, MySQL, JDBC, 서블릿, MVC (MustHaveJSP)
 
