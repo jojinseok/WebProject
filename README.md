@@ -1,8 +1,6 @@
 웹프로젝트 
 
 ![이미지](https://user-images.githubusercontent.com/82083624/208305147-4e664578-36f3-49ec-a554-75c9893ae153.PNG)
-![computer-4795762_960_720](https://user-images.githubusercontent.com/82083624/215960086-17e0ff73-e063-47dc-b5e0-51422516a148.jpg)
-
 
 게시판 만들기 프로젝트 (branch : master, back-end) : (MustHaveJSP -> src/main -> webapp -> 14MVCBoard -> * , MustHaveJSP -> src/main -> java -> * )
 
